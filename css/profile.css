@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body{
+    bottom: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+  }
+  
+  .nama{
+    animation: color 5s linear  0s infinite alternate running;
+    background-color:  white;
+    border: 5px solid;
+    border-radius: 2mm;
+    padding: 3mm;
+    width: 10cm;
+    font-family: initial;
+    font-size: 1cm;
+    text-align: center;
+  }
+  
+  @keyframes color {
+        0% {color : red; }
+        32% {color: orange; }
+        55% {color: yellow; }
+        76% {color: blue; }
+        100% {color: green; }
+    }
+  
+  
+  .nav__links a,
+  .cta{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+
+  .box1{
+    width: 600px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+    transition: 1s;
+  }
+
+  .box1:hover{
+    width: 800px; 
+  }
+
+  .box1-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  .box1 h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+  }
+  .box1 h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+  }
+  .box1 p{
+    text-align: center;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .box1 li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+  }
+  .box1 li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+  }
+  .box1 li a:hover{
+    color: #b9b9b9;
+  }

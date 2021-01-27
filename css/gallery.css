@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252a;
+  }
+  
+  .nama{
+    animation: color 5s linear  0s infinite alternate running;
+    background-color:  white;
+    border: 5px solid;
+    border-radius: 2mm;
+    padding: 3mm;
+    width: 10cm;
+    font-family: initial;
+    font-size: 1cm;
+    text-align: center;
+  }
+  
+  @keyframes color {
+        0% {color : red; }
+        32% {color: orange; }
+        55% {color: yellow; }
+        76% {color: blue; }
+        100% {color: green; }
+    }
+  
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  /* bagian flip gambar */
+
+  .flip-card {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 50px;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    perspective: 1000px; 
+    width: 550px;
+    height: 400px;
+  }
+  
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 10px 10px grey;
+  }
+  
+
+  .flip-card-front {
+    background-color: tomato;
+    color: bisque;
+    text-align: center;
+  }
+
+  .flip-card-front h1{
+    margin-top: 180px;
+    text-shadow: 0 0 10px blueviolet, 0 0 300px blue;
+  }
+  
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card1 {
+    margin-left: 900px;
+    margin-top: 240px;
+    position: absolute;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    perspective: 1000px; 
+    width: 550px;
+    height: 400px;
+  }
+  .flip-card1:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card2 {
+    margin-left: 80px;
+    margin-top: 500px;
+    position: absolute;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    perspective: 1000px; 
+    width: 550px;
+    height: 400px;
+  }
+  .flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card3 {
+    position: relative;
+    margin-left: 900px;
+    margin-top: 790px;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 0px;
+    perspective: 1000px; 
+    width: 550px;
+    height: 400px;
+  }
+  .flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
